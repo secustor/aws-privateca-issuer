@@ -60,3 +60,9 @@ Create the name of the service account to use
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
 {{- end }}
+
+{{/*
+Allow labels to be dynamically overwritten by parent charts using shared templates
+*/}}
+{{- define "aws-privateca-issuer.container.issuer.env" -}}
+{{- end }}
